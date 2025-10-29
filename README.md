@@ -1,4 +1,16 @@
 # TF-MAPS
 TF-MAPS: fast high-resolution functional and allosteric mapping of DNA-binding proteins. 
-## Abstract
-Transcription factors (TFs) bind specific DNA sequences to control gene expression. Inhibiting or modulating TF activity is of considerable therapeutic interest but very challenging because direct inhibition of DNA-binding interfaces with small molecules is rarely feasible, necessitating the development of allosteric modulators.  The vast majority of TFs, however, have no known allosteric ligands or allosteric sites.  Here, we introduce TF-MAPs, a scalable experimental platform that generates comprehensive functional and allosteric maps of DNA-binding proteins and we present the first three allosteric maps of human TFs.   We first apply TF-MAPs to HNF1A to understand DNA recognition, allostery, and diabetes-causing mutations.  We then use TF-MAPs to produce comparative maps for two forkhead TFs, FOXG1 and FOXP1.  Allostery in all three proteins shows distance-dependent decay and anisotropy.  The maps also identify allosteric surface sites and prioritise potentially druggable allosteric surface pockets.  Using this approach it should be possible to chart functional and allosteric maps for hundreds of human TFs and other DNA-binding proteins to guide the interpretation of clinical variants and the development of therapeutics.
+Here you'll find source code to reproduce the computational analyses in the [bioRxiv paper](https://www.biorxiv.org/content/10.1101/2025.10.20.683418v1). 
+
+## Required Data
+The following data as RData formats are available for download from [here zeondo](https://zenodo.org/records/17457956), and copied to your "base_dir" folder for running the analysis.  
+(1) the read counts (DiMSum outputs for DNA-binding assay "dimsum_output_b1h.RData" & "dimsum_output_ss.RData"), 
+(2) the combined score data with all annotations for all amino acid substitutions ("combined_muts_hn.RData", "combined_muts_fg.RData", "combined_muts_fp.RData") 
+(3) the positional aggregated data ("positional_hn.RData", "positional_fg.RData",  "positional_fp.RData") 
+(4) Combined data for FOXG1 and FOXP1 for direct comparisons ("muts_fg_fp_comparisons.RData", "positional_fg_fp_comparisons.RData" ) 
+
+## System Requirements
+R (GGally, ggplot2, ggpubr, gplots, stringr,dplyr)
+
+## Additional Information 
+To reproduce this part, please use DiMSum v1.3.2. Download the FastQ files from European Nucleotide Archive (ENA) with accession number [PRJEB97482](https://www.ebi.ac.uk/ena/browser/view/PRJEB97482) to your base directory (base_dir). 
