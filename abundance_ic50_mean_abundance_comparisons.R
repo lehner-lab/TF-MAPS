@@ -6,7 +6,6 @@ load("combined_muts_hnf1a.RData") #muts_hn
 load("combined_muts_fg.RData") #muts_fg
 load("combined_muts_fp.RData") #muts_fp 
 
-# biophysical classification:  
 
 ######## model ic50, and reorganise the data 
 # try to fit the model: 
