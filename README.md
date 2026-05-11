@@ -23,6 +23,7 @@ This script generates DEFATTR files for ChimeraX, enabling visualisation of medi
 This script calculates IC50 values from spectinomycin assays using DiMSum output across 21 concentrations. These IC50 values are compared with mean enrichment scores from three selected concentrations to guide the choice of scoring matrices.
 
 Usage: Example commands and instructions for each function are provided within the respective R scripts alongside the function definitions.  
+Installation and runtime are typically under 30 minutes on a regular desktop computer.  
 
 ## Additional Information 
 To reproduce the part from Illumina sequencing reads to DiMSum outputs, please use DiMSum v1.3.2. Download the FastQ files from European Nucleotide Archive (ENA) with accession number [PRJEB97482](https://www.ebi.ac.uk/ena/browser/view/PRJEB97482) to your base directory. Parameters for the DiMSum run are provided in the [manuscript] (https://www.biorxiv.org/content/10.1101/2025.10.20.683418v1).   
